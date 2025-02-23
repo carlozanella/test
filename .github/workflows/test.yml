@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run external Python action
-        uses: carlozanella/deploy-coolify@v0.3
+        uses: carlozanella/deploy-coolify@v0.4
         with:
           input1: "Hello"
           input2: "World"
