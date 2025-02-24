@@ -18,6 +18,6 @@ jobs:
           endpoint: ${{secrets.COOLIFY_ENDPOINT}}
           token: ${{secrets.COOLIFY_TOKEN}}
           app_uuid: dk0owkg8088okckgo8s0ggog
-          image_name: jenkins/jenkins
+          image_name: nginx
           image_tag: latest
 
