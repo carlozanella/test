@@ -13,7 +13,11 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run external Python action
-        uses: carlozanella/deploy-coolify@v0.4
+        uses: carlozanella/deploy-coolify@v0
         with:
-          input1: "Hello"
-          input2: "World"
+          endpoint: ${{secrets.COOLIFY_ENDPOINT}}
+          token: ${{secrets.COOLIFY_TOKEN}}
+          app_uuid: dk0owkg8088okckgo8s0ggog
+          image_name: jenkins/jenkins
+          image_tag: latest
+
